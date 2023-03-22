@@ -1,0 +1,177 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto','sans-serif';
+
+}
+
+.banner{
+  background: url(images/baner.png) no-repeat;
+  background-size: cover;
+  height: 100vh;
+
+
+
+}
+
+/*------MENU-------*/
+.menu-navegacao {
+  width: 100%;
+  height: 80px;
+  background: rgba(0, 0, 0, 0.4);
+
+}
+
+.menu-navegacao ul {
+  float:  right;
+  margin-right: 20px;
+}
+
+.menu-navegacao ul li {
+  list-style: none;
+  margin: 0 8px;
+  display: inline;
+  line-height: 80px;
+
+}
+
+.menu-navegacao ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-family: 'Roboto','sans-serif';
+  font-weight: bold;
+  padding: 6px 13px;
+  transition: .4s;
+}
+
+.menu-navegacao ul li a.ativo, .menu-navegacao ul li a:hover {
+  background: black;
+  border-radius: 2px;
+}
+
+/*------LOGO-------*/
+.logo {
+  width: 240px;
+  height: auto;
+  padding: 0px 10px;
+  margin-top: -70px;
+}
+
+
+/*----FORMULÁRIO----*/
+
+.center {
+
+  color: #ffffff;
+  position: absolute;
+  top: 56%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 5px;
+  border-radius: 15px;
+  width: 30%;
+
+}
+
+.cadastro{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* LINHA BORDA */
+
+fieldset {
+
+  border: 2px solid white;
+  border-radius: 10px;
+
+}
+
+legend {
+
+  border: 1px solid white;
+  padding: 5px;
+  text-align: center;
+  background-color: black;
+  border-radius: 5px;
+
+}
+
+/*Organizando os dados*/
+
+.dados {
+
+  position: relative;
+  letter-spacing: 3px;
+
+}
+
+.usuario {
+
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  outline: none;
+  color: white;
+  font-size: 16px;
+  width: 100%;
+
+}
+
+/* DADOS PRINCIPAIS E ENDEREÇO */
+
+.campo {
+
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  pointer-events: none;
+  transition: .5s;
+
+}
+
+.usuario:focus ~ .campo, .usuario:valid ~ .campo {
+
+  top: -20px;
+  font-size: 12px;
+
+}
+
+/* AJUSTES NA DATA DE NASCIMENTO */
+
+#data_nascimento {
+
+  border: none;
+  padding: 6px;
+  border-radius: 10px;
+  outline: none;
+  font-size: 15px;
+
+}
+
+/* AQUI É O BOTÃO DE ENVIAR */
+
+#submit {
+
+  background-image: white;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  color: blueviolet;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+
+}
+
+#submit:hover {
+  background-image: linear-gradient(to right, rgb(0, 80, 172), rgb(80, 19, 195));
+  font-weight: bold;
+  color: white;
+}
+
+
+

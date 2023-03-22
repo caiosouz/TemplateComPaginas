@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="Caio" content="IESB">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="cadastro.css" />
+    <title>Cadastro</title>
+    <script src="index.js"></script>
+</head>
+<body>
+
+    <div class="banner">
+        <nav class="menu-navegacao">
+            <a href="index.html"><img class="logo" src="images/logoo.png" class="imagem" alt="" /></a>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="animais.html">Animais</a></li> 
+                <li><a href="valores.html">Estoque</a></li>
+                <li><a href="grupos.html">Grupos de Animais</a></li> 
+                <li style="float:right"><a class="ativo" href="cadastro.html">Cadastre-se Aqui</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <div class="center">
+        <form action="">
+            <fieldset>
+                <legend><b>Cadastro</b></legend>
+                <br>
+
+                <!-- TODOS OS DADOS -->
+                <div class="cadastro">
+                    <p>Dados:</p><br>
+                    <div class="dados">
+                        <input type="text" name="nome" id="nome" class="usuario" required>
+                        <label for="nome" class="campo">Nome Completo</label>
+                    </div><br>
+
+                    <div class="dados">
+                        <input type="text" name="email" id="email" class="usuario" required>
+                        <label for="nome" class="campo">Email</label>
+                    </div><br>
+
+                    <div class="dados">
+                        <input type="tel" name="telefone" id="telefone" class="usuario" required>
+                        <label for="nome" class="campo">Telefone</label>
+                    </div><br>
+
+                    <p>Sexo:</p><br>
+                    <input type="radio" id="feminino" name="genero" value="feminino" required>
+                    <label for="feminino">Feminino</label>
+
+                    <input type="radio" id="masculino" name="genero" value="masculino" required>
+                    <label for="masculino">Masculino</label>
+
+                    <input type="radio" id="outro" name="genero" value="outro" required>
+                    <label for="outro">Outro</label>
+                    <br><br>
+                    
+                    <!-----DT NASCIMENTO---->
+
+                    <label for="data_nascimento"><b>Data de Nascimento:</b></label>
+                    <input type="date" name="data_nascimento" id="data_nascimento" required>
+                    <br><br>
+                    
+                    <!----ENDEREÇO---->
+
+                    <p>Endereço:</p><br>
+                    <div class="dados">
+                        <input type="text" name="cidade" id="cidade" class="usuario" required>
+                        <label for="cidade" class="campo">Cidade</label>
+                    </div><br>           
+                    <div class="dados">
+                        <input type="text" name="estado" id="estado" class="usuario" required>
+                        <label for="estado" class="campo">Estado</label>
+                    </div><br>
+                    <div class="dados">
+                        <input type="text" name="endereco" id="endereco" class="usuario" required>
+                        <label for="endereco" class="campo">Endereço</label>
+                    </div><br>
+
+                    <!-- BOTÃO ENVIAR -->
+                </div>
+                <input type="submit" name="submit" id="submit">
+
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

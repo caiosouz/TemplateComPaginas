@@ -1,0 +1,110 @@
+/*------AJUSTE DAS MARGENS DA TELA INTEIRA-------*/
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/*------IMAGEM DE TOPO ABAIXO DO MENU-------*/
+
+.banner{
+  background: url(images/baner.png) no-repeat;
+  background-size: cover;
+  height: 100vh;
+
+}
+
+/*------MENU-------*/
+.menu-navegacao {
+  width: 100%;
+  height: 80px;
+  background: rgba(0, 0, 0, 0.4);
+
+}
+
+/*------LISTA DO MENU-------*/
+.menu-navegacao ul {
+  float:  right;
+  margin-right: 20px;
+}
+
+.menu-navegacao ul li {
+  list-style: none;
+  margin: 0 8px;
+  display: inline;
+  line-height: 80px;
+
+}
+
+.menu-navegacao ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-family: 'Roboto','sans-serif';
+  font-weight: bold;
+  padding: 6px 13px;
+  transition: .4s;
+}
+
+.menu-navegacao ul li a.ativo, .menu-navegacao ul li a:hover {
+  background: black;
+  border-radius: 2px;
+}
+
+/*------LOGO-------*/
+.logo {
+  width: 240px;
+  height: auto;
+  padding: 0px 10px;
+  margin-top: -70px;
+}
+
+/*------TEXTOS COM TITULOS-------*/
+.p1, .p2, .p3 {
+  text-align: center;
+  margin: 30px;
+  color: blueviolet;
+  font-family: 'Merriweather',serif;
+}
+
+/*------IMAGEM DA ATENDENTE-------*/
+.atendente {
+  border-radius: 20px;
+  padding: 10px;
+  width: 20%;
+  height: auto;
+
+}
+/*------PARÁGRAFOS-------*/
+p {
+  width: 60%;
+  float: left;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 120px;
+  font-size: 16px;
+  color: black;
+
+}
+
+/*------VIDEO-------*/
+video{
+  width: 15%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.footer{
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  font-size: 30px;
+}
+
+footer{
+  
+  background-color: #ebebeb;
+  display: flex;
+  width: 100%;
+  
+}
